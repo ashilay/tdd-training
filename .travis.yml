@@ -2,8 +2,8 @@ language: node_js
 node_js:
 - 0.10
 script: 
-- lineman spec-ci
-- istanbul cover hello-spec.js
+- "lineman spec-ci"
+- "istanbul cover hello-spec.js"
 addons:
   code_climate:
     repo_token: 316d41389e92ef81bdf37c67a34046cc59411c0aba9fd20156111abf2ece7eb2 
