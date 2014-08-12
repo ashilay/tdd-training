@@ -1,4 +1,11 @@
 describe(".helloText", function(){
-  When(function(){ this.result = helloText(); });
-  Then(function(){ expect(this.result).toEqual("Hello, World!"); });
+	var result;
+	beforeEach(function() {
+		result = helloText();
+	});
+
+	it('should return correct text', function() {
+		expect(result).toEqual("Hello, World!");
+	});
+
 });
