@@ -8,4 +8,4 @@ addons:
     repo_token: 316d41389e92ef81bdf37c67a34046cc59411c0aba9fd20156111abf2ece7eb2 
 
 after_script:
-  - cat ./spec/coverage/lcov.info | codeclimate
+  - cat lcov.info | codeclimate
